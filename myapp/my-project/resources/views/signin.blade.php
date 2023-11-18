@@ -17,7 +17,7 @@
 
             <input type="submit" name="enter" value="Entrar">
         </form>
-        <a href="./../insert_db_2/registre.html">Resistra't!</a>
+        <a href="{{ route('signup') }}">Resistra't!</a>
     </div>
 </body>
 </html>
