@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-        <h3>Inici de sessió</h3>
+        <h3>Formulari d'inici de sessió</h3>
         <form action="login.php" method="post">
             <label for="email">Correu:</label>
             <input type="email" name="email"><br>

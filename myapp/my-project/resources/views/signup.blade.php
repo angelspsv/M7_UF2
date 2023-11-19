@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-        <h3>Formulari de registre d'usuari</h3>
+        <h3>Formulari de registre de usuari nou</h3>
         <form action="registre.php" method="post">
             <label for="name">Nom:</label>
             <input type="text" name="name"><br>
