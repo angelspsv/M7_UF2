@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-        <h3>Formulari d'inici de sessió</h3>
+        <h3>{{ $v1 }} {{ $v2 }} {{ $v3 }} {{ $v4 }}</h3>
         <form action="login.php" method="post">
             <label for="email">Correu:</label>
             <input type="email" name="email"><br>
@@ -17,7 +17,7 @@
 
             <input type="submit" name="enter" value="Entrar">
         </form>
-        <a href="{{ route('signup') }}">Resistra't!</a>
+        
     </div>
 </body>
 </html>

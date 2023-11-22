@@ -21,9 +21,9 @@ Route::get('/', function () {
 //controller
 Route::prefix('angel') -> group(function(){
     //crida la vista signin o d'inici de sessió
-    Route::get('/signin', [SignController::class, 'signin'])->name('signin'); 
+    Route::get('/signin/{v1}/{v2}/{v3}/{v4}', [SignController::class, 'signin']);    //->name('signin'); 
 
     //crida la vista signup o de registre de nou usuari
-    Route::get('/signup', [SignController::class, 'signup'])->name('signup'); 
+    Route::get('/signup/{v1}/{v2}/{v3}', [SignController::class, 'signup']);   //->name('signup'); 
 });
 ?>
