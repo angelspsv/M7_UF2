@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-        <h3>Formulari de registre de usuari nou</h3>
+        <h3>{{$v1}} {{$v2}} {{$v3}}</h3>
         <form action="registre.php" method="post">
             <label for="name">Nom:</label>
             <input type="text" name="name"><br>
@@ -34,7 +34,7 @@
 
             <br><input type="submit" name="enter" value="Registrar">
         </form>
-        <a href="{{ route('signin') }}">Iniciar sessió</a>
+        
     </div>
 </body>
 </html>
