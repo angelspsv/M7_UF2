@@ -1,5 +1,6 @@
 # Copyright VMware, Inc.
 # SPDX-License-Identifier: APACHE-2.0
+#Per obrir phpmyadmin localhost:8080 server:mariadb username:bn_myapp
 
 version: '2'
 
@@ -24,3 +25,10 @@ services:
       - './my-project:/app'
     depends_on:
       - mariadb
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1  

@@ -34,7 +34,7 @@
 
             <br><input type="submit" name="enter" value="Registrar">
         </form>
-        
+        <a href="{{ route('signin') }}">Inicia sessió</a>
     </div>
 </body>
 </html>

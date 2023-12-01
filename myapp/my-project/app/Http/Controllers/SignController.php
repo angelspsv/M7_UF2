@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SignController extends Controller
-{
+class SignController extends Controller{
+    
     public function signin(){
         return view('signin');
     }
