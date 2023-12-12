@@ -22,14 +22,14 @@ Route::get('/', function () {
 //controller
 Route::prefix('angel') -> group(function(){
     //crida la vista signin o d'inici de sessió
-    Route::get('/signin', [SignController::class, 'signin']->name('signin')); 
+    Route::get('/signin', [SignController::class, 'signin'])->name('signin'); 
 
     //crida la vista signup o de registre de nou usuari
-    Route::get('/signup', [SignController::class, 'signup']->name('signup')); 
+    Route::get('/signup', [SignController::class, 'signup'])->name('signup'); 
 });
 
 Route::middleware(['admin_db'])->group(function(){
-    Route::get('/centres', [AdminController::class, 'centres']->name('centres'));
+    Route::get('/centres', [AdminController::class, 'centres'])->name('centres');
 
 });
 
