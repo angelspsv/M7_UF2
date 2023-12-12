@@ -30,7 +30,8 @@ Route::prefix('angel') -> group(function(){
 
 Route::middleware(['admin_db'])->group(function(){
     Route::get('/centres', [AdminController::class, 'centres'])->name('centres');
-
+    Route::get('/professorat', [AdminController::class, 'professorat'])->name('professorat');
+    Route::get('/alumnat', [AdminController::class, 'alumnat'])->name('alumnat');
 });
 
 ?>

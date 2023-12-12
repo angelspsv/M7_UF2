@@ -8,7 +8,8 @@
 <body>
     <div>
         <h3>Formulari d'inici de sessió</h3>
-        <form action="login.php" method="post">
+        <form action=" {{route('admin_view')}} " method="POST">
+            @csrf
             <label for="email">Correu:</label>
             <input type="email" name="email"><br>
 
@@ -16,6 +17,9 @@
             <input type="password" name="password" minlength="8"><br>
 
             <input type="submit" name="enter" value="Entrar">
+            <div>
+                <a href="{{ route('signup') }}">Crear usuari nou</a>
+            </div>
         </form>
     </div>
 </body>

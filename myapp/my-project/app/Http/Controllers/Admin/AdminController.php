@@ -9,17 +9,18 @@ class AdminController extends Controller
 {
     public function usuaris(Request $request){
         $email_true = "marta@lopez.cat";
-        $passwordHardCoded = "12345678";
-        $emailRebut = $request->input('email');
-        $passwdRebuda= $request->input('password');
-        if ($email_true == $emailRebut && $password_true == $passwdRebuda){
-         return view('Admin.admin');
+        $password_true = "12345678";
+        $email_entrada = $request->input('email');
+        $passwd_entrada= $request->input('password');
+        if ($email_true == $email_entrada && $password_true == $passwd_entrada){
+            return view('Admin.admin');
         } else {
-         return view('signin');
+            return view('signin');
         }
-     }
+    }
  
-     public function usuarisget(){
-         return view ('Admin.admin');
-     }
+    public function usuarisget(){
+        return view ('Admin.admin');
+    }
 }
+?>
