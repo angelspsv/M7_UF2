@@ -18,7 +18,7 @@
 
             <input type="submit" name="enter" value="Entrar">
             <div>
-                <a href="{{ route('signup') }}">Crear usuari nou</a>
+                <br><a href="{{ route('signup') }}">Crear usuari nou</a>
             </div>
         </form>
     </div>

@@ -8,11 +8,9 @@
 <body>
     <h2>Benvingut/da admin</h2>
     <div>
-        <!--
         <a href="{{ route('centres') }}" >CENTRES</a><span><b> | </b></span> 
         <a href="{{ route('professorat') }}" >PROFESSORAT</a><span><b> | </b></span>
         <a href="{{ route('alumnat') }}" >ALUMNAT</a>
--->
     </div>
     <br><a href="{{route('signin')}}">Log Out </a>
 </body>
